@@ -1,6 +1,6 @@
 <h1>Listar Usuários</h1>
 <ol>
-    <li>ID: {{usuario.Id}} | Nome: {{usuario.Nome}} | Idade: {{usuario.Idade}}</li>
-    <li>ID: {{usuario.Id}} | Nome: {{usuario.Nome}} | Idade: {{usuario.Idade}}</li>
-    <li>ID: {{usuario.Id}} | Nome: {{usuario.Nome}} | Idade: {{usuario.Idade}}</li>
+    {% for usuario in usuarios %}
+    <li>ID: {{usuario.id}} | Nome: {{usuario.nome}} | Idade: {{usuario.idade}}</li>
+    {% endfor %}
 </ol>
