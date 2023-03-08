@@ -1,0 +1,49 @@
+{% load static %}
+
+{% comment %} Styles CSS {% endcomment %}
+<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<h1>Bem vindo jogador!</h1>
+<h2>Selecione a operação que você deseja</h2>
+
+<div id="caixa">
+	<div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="../static/assets/home/images.png" width="100" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title">Listar Jogos</h5>
+			<p class="card-text">Faça uma pequena pesquisa em toda nossa biblioteca de jogos disponíveis para compra.
+			</p>
+			<a href="#" class="btn btn-primary">Listar!</a>
+		</div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="../static/assets/home/icon.png" width="100" height="245" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title">Listar Produtoras</h5>
+			<p class="card-text">Faça uma pequena pesquisa em toda nossa biblioteca de jogos disponíveis para compra.
+			</p>
+			<a href="#" class="btn btn-primary">Listar!</a>
+		</div>
+	</div>
+
+</div>
+
+
+
+<body>
+
+</body>
+
+</html>
