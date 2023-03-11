@@ -13,11 +13,11 @@ games = [
 ]
 
 
-def listar_jogos(request):
+def listar_Jogo(request):
     context = {"games": games}
     return render(request, "listar_jogo.html", context)
 
 
-def detalhe_jogo(request, id):
+def detalhe_Jogo(request, id):
     game = games[id - 1]
     return render(request, "detalhe_jogo.html", {"game": game})

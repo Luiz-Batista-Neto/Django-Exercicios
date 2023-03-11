@@ -17,4 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from telaInicio.views import *
 
-urlpatterns = [path("admin/", admin.site.urls), path("home/", gameHome)]
+urlpatterns = [
+    path("admin/", admin.site.urls), 
+    path("home/", gameHome), 
+    path("home/listar_Jogo", listar_Jogo),
+    path("home/detalhe_Jogo", detalhe_Jogo)
+    ]
