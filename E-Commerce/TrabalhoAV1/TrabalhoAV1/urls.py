@@ -21,5 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls), 
     path("home/", gameHome), 
     path("home/listar_Jogo", listar_Jogo),
-    path("home/detalhe_Jogo", detalhe_Jogo)
+    path("home/<int:id>", detalhe_Jogo)
     ]
